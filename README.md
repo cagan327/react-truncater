@@ -22,6 +22,10 @@ more: PropTypes.bool: Should clicking on the '...' display the rest of the text?
 
 handleClick: PropTypes.func: what happens when user clicks on the text
 
+`import Truncater from 'react-truncater'`
+
+`<Truncater more={true} chars={10}>This is the text to be truncated</Truncater>`
+
 ## CSS and preprocessors
 
 The component wraps the given text within a &lt;div&gt; element
