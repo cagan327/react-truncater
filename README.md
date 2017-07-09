@@ -1,4 +1,4 @@
-# React-truncater
+# react-truncater
 
 React component that handles text truncation based on max characters allowed
 
@@ -18,13 +18,13 @@ chars: PropTypes.number.isRequired: max number of characters after which the ell
 
 ellipsisClassName: PropTypes.string: css classname for '...',
 
-more: PropTypes.bool: Should clicking on the '...' display the rest of the text
+more: PropTypes.bool: Should clicking on the '...' display the rest of the text?
 
 handleClick: PropTypes.func: what happens when user clicks on the text
 
 ## CSS and preprocessors
 
-The component wraps the given text within a <div> element
+The component wraps the given text within a &lt;div&gt; element
 with the css classname of 'truncater'.  You may choose to customize this
 for margins, paddings, etc.
 
