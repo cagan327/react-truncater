@@ -53,7 +53,7 @@ class Truncater extends React.Component {
 
     render() {
         return (
-          <div className='truncater' key={Math.random().toString()}>
+          <div className='truncater' key={Math.random().toString() +"d1"}>
               {this.renderText()}
             </div>
         )
