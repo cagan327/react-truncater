@@ -28,7 +28,7 @@ handleClick: PropTypes.func: what happens when user clicks on the text
 
 ## CSS and preprocessors
 
-The component wraps the given text within a &lt;p&gt; element
+The component wraps the given text within a &lt;section&gt; element
 with the css classname of 'truncater'.  You may choose to customize this
 for margins, paddings, etc.
 

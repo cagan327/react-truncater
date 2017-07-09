@@ -1,6 +1,6 @@
 {
   "name": "react-truncater",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React component that handles text truncation",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 /**
-* Wraps the given text within a <p> element with a css classname 'truncater'
+* Wraps the given text within a <section> element with a css classname 'truncater'
 * props:
 * chars: maximum number of characters allowed
 * more: boolean (if set clicking on the ellipsis shows the rest of the text)
