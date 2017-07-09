@@ -1,31 +1,37 @@
-# Boilerplate for creating React Npm packages with ES2015
+# React-truncater
 
-The package is based on [npm-base](https://github.com/kadirahq/npm-base) package by [Kadira](https://github.com/kadirahq) which is really great when you want to prepare Npm package. This one is prepared to be used as a starter point for React components which needs to be published on Npm.
+React component that handles text truncation based on max characters allowed
 
-It includes linting with [ESLint](http://eslint.org/) and testing with [Mocha](https://mochajs.org/), [Enzyme](http://airbnb.io/enzyme/) and [JSDOM](https://github.com/tmpvar/jsdom).
+## Installation
 
-Also there is of course ES6 transpilation.
+npm install --save react-truncater
+
+or
+
+yarn add react-truncater
 
 ## Usage
 
-1. Clone this repo
-2. Inside cloned repo run `npm install && rm -rf .git && git init` and update `package.json` with your package name.
-3. If you want to run tests: `npm test` or `npm run testonly` or `npm run test-watch`. You need to write tests in `__tests__` folder. You need at least Node 4 on your machine to run tests.
-4. If you want to run linting: `npm test` or `npm run lint`. Fix bugs: `npm run lint-fix`. You can adjust your `.eslintrc` config file.
-5. If you want to run transpilation to ES5 in `dist` folder: `npm run prepublish` (standard npm hook).
+The list of available properties:
+
+chars: PropTypes.number.isRequired: max number of characters after which the ellipsis will be displayed
+
+ellipsisClassName: PropTypes.string: css classname for '...',
+
+more: PropTypes.bool: Should clicking on the '...' display the rest of the text
+
+handleClick: PropTypes.func: what happens when user clicks on the text
 
 ## CSS and preprocessors
 
-For more information check out this thread: [#5](https://github.com/juliancwirko/react-npm-boilerplate/issues/5)
+The component wraps the given text within a <div> element
+with the css classname of 'truncater'.  You may choose to customize this
+for margins, paddings, etc.
 
-## Blog post about it:
+You may also specify a 'ellipsisClassName' parameter value to style
+the ellipsis according to your needs
 
-- [Creating React NPM packages with ES2015](http://julian.io/creating-react-npm-packages-with-es2015/)
 
-## Also check out
-
-- [React Alert UI component](https://github.com/juliancwirko/react-s-alert)
-- [React project boilerplate with Webpack, HMR, React Router](https://github.com/juliancwirko/react-boilerplate)
 
 ## License
 
