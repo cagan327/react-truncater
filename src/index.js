@@ -40,12 +40,12 @@ class Truncater extends React.Component {
 
     renderText = () => {
       let html = []
-      html.push(<span onClick={this.handleClick}> {this.state.displayText}</span>)
+      html.push(<span key={Math.random().toString() + "sp1"} onClick={this.handleClick}> {this.state.displayText}</span>)
       if (this.state.truncated){
         if (this.props.more){
-          html.push(<span className={this.props.ellipsisClassName} onClick={this.displayAll}>...</span>)
+          html.push(<span key={Math.random().toString() + "sp2"} className={this.props.ellipsisClassName} onClick={this.displayAll}>...</span>)
         }else{
-          html.push(<span className={this.props.ellipsisClassName} onClick={this.handleClick}>...</span>)
+          html.push(<span key={Math.random().toString() + "sp3"} className={this.props.ellipsisClassName} onClick={this.handleClick}>...</span>)
         }
       }
       return html;
