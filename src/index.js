@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 /**
-* Wraps the given text within a <section> element with a css classname 'truncater'
+* Wraps the given text within a <div> element with a css classname 'truncater'
 * props:
 * chars: maximum number of characters allowed
 * more: boolean (if set clicking on the ellipsis shows the rest of the text)
@@ -53,9 +53,9 @@ class Truncater extends React.Component {
 
     render() {
         return (
-          <section className='truncater' key={Math.random().toString() +"d1"}>
+          <div className='truncater' key={Math.random().toString() +"d1"}>
               {this.renderText()}
-            </section>
+            </div>
         )
     }
 };
